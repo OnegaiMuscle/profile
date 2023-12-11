@@ -2,7 +2,6 @@ body {
   background-color: black;
   font-family: Arial;
   color: white;
-  font-size: 16px;
   text-align: center;
   line-height: 24px;
 }
@@ -35,7 +34,8 @@ a:hover {
 .container {
   width: 640px;
   margin: 16px auto;
-  border-radius: 32px;
+  padding: 4px ;
+  border-radius: 24px;
   border: 8px solid red;
 }
 
@@ -58,8 +58,59 @@ a:hover {
   display: inline-block;
 }
 
-@media (max-width: 720px) {
-  .container {
-    width: 640px;
-  }
+
+.card {
+  width: 100%;
+  height: 512px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+  font-weight: bolder;
+}
+
+.card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 24px;
+  transition: all 1s;
+  border: 2px solid red;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card p img {
+
+  display: none;
+}
+
+.card p span {
+  min-width: 20em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 1s;
+
+}
+
+.card p:hover {
+  flex: 8;
+  align-items: end;
+}
+
+.card .bg-img1:hover { background-image: url('images/cobra.jpg') }
+.card .bg-img2:hover { background-image: url('images/dandadan.jpg') }
+.card .bg-img3:hover { background-image: url('images/dr_stone.jpg') }
+.card .bg-img4:hover { background-image: url('images/dumbbellnankilomoteru.jpg') }
+.card .bg-img5:hover { background-image: url('images/hellsingultimate.jpg') }
+.card .bg-img6:hover { background-image: url('images/thebigo.jpg') }
+.card .bg-img7:hover { background-image: url('images/valkyrieapocalypse.jpg') }
+.card .bg-img8:hover { background-image: url('images/yakitatejapan.jpg') }
+
+.card p:hover span {
+  transform: rotate(0);
+  transform-origin: left;
 }
