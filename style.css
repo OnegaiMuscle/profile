@@ -1,0 +1,126 @@
+body {
+  background-color: black;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  background-color: red;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 16px;
+  border: 4px solid red;
+  transition: 1s;
+}
+
+a:hover {
+  color: white;
+  border: 4px solid white;
+  background-color: black;
+}
+
+.avatar {
+  width: 120px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.main {
+  width: 656px;
+  height: 200px;
+  margin: 56px auto;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 144px;
+  height: 232px;
+  border-radius: 24px;
+  border: 8px solid red;
+  position: absolute;
+  padding: 16px 24px;
+  transition: all 1s;
+}
+
+#c2 {
+  opacity: 0;
+}
+
+#c3 {
+  opacity: 0;
+}
+
+.main:hover #c1 {
+  transform: translateX(0px);
+}
+
+.main:hover #c2 {
+  transform: translateX(-224px);
+  opacity: 1;
+}
+
+.main:hover #c3 {
+  transform: translateX(224px);
+  opacity: 1;
+}
+
+.container {
+  width: 640px;
+  margin: 16px auto;
+  padding: 4px ;
+  border-radius: 24px;
+  border: 8px solid red;
+}
+
+.cardbis {
+  width: 100%;
+  height: 512px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+  font-weight: bolder;
+}
+
+.cardbis p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 24px;
+  transition: all 1s;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardbis p span {
+  min-width: 20em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 1s;
+}
+
+.cardbis p:hover {
+  flex: 8;
+  align-items: end;
+}
+
+.cardbis p:hover span {
+  transform: rotate(0);
+  transform-origin: left;
+}
+
+.bg-img1:hover { background-image: url('images/cobra.jpg') }
+.bg-img2:hover { background-image: url('images/dandadan.jpg') }
+.bg-img3:hover { background-image: url('images/dr_stone.jpg') }
+.bg-img4:hover { background-image: url('images/dumbbellnankilomoteru.jpg') }
+.bg-img5:hover { background-image: url('images/hellsingultimate.jpg') }
+.bg-img6:hover { background-image: url('images/thebigo.jpg') }
+.bg-img7:hover { background-image: url('images/valkyrieapocalypse.jpg') }
+.bg-img8:hover { background-image: url('images/yakitatejapan.jpg') }
